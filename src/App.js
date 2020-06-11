@@ -1,17 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TabMenu from "./components/TabMenu"
 
-function App() {
-  return (
-    <div className="App">
-   <ul>
-      <li>Go to market</li>
-      <li>Buy food</li>
-      <li>Make dinner</li>
-   </ul>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+            <TabMenu/>
+      </div>
+    );
+  }
 }
 
 export default App;

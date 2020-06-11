@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+.TabMenu{
+  display: flex;
+  padding: 3em;
+}
+.TabMenu div{
+  flex-grow: 1;
+  border:1px solid rgba(0,0,0,.05);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #8E8E8E;
+  background: rgba(221, 221, 221, 0.5)
+}
+.TabMenu div:nth-child(1){
+  background: #FFFFFF;
+  border-top: 2px solid #8CDC52;
+  color:#8CDC52;
+  box-shadow: 0px 3px 3px rgba(0,0,0,.3)
+}
