@@ -13,13 +13,11 @@ import cloudUpload from '@iconify/icons-cil/cloud-upload';
 
 class TabMenu extends Component{
   render(){
+
     return(
     <div className="TabMenu">
-      <div className="home"><Icon icon={homeOutline}  width="65" height="65" />HOME</div>
-      <div className="home"><Icon icon={giftIcon}  width="65" height="65" />DEALS</div>
-      <div className="home"><Icon icon={cloudUpload}  width="65" height="65" />UPLOAD</div>
-      <div className="home"><Icon icon={cafeIcon}  width="65" height="65" />WORK</div>
-      <div className="home"><Icon icon={settingOutlined}  width="65" height="65" />SETTINGS</div>
+      <div><Icon icon={this.props.item.icon}  width="65" height="65"/>{this.props.item.label}</div>
+
       </div>
     )
   }
